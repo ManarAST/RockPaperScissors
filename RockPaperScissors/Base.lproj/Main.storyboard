@@ -1,24 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your weapon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-3b-JcT">
+                                <rect key="frame" x="46" y="217" width="283.5" height="43"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="34"/>
+                                <color key="textColor" red="0.39908200691043455" green="0.90600712435233155" blue="0.73356908681064092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-VO-7ty">
+                                <rect key="frame" x="36" y="301" width="75" height="65"/>
+                                <state key="normal" image="paper"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-fG-2gA">
+                                <rect key="frame" x="150" y="301" width="75" height="65"/>
+                                <state key="normal" image="rock"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-oq-UqO">
+                                <rect key="frame" x="265" y="301" width="75" height="65"/>
+                                <state key="normal" image="scissors"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGQ-TM-dl7">
+                                <rect key="frame" x="155" y="435" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="hJ4-rv-PJE"/>
+                                    <constraint firstAttribute="height" constant="65" id="lNr-TD-nrc"/>
+                                </constraints>
+                                <state key="normal" image="history"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54596141276408627" green="0.25751924979184926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gaO-fG-2gA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9mN-UI-45G"/>
+                            <constraint firstItem="gaO-fG-2gA" firstAttribute="top" secondItem="vDI-3b-JcT" secondAttribute="bottom" constant="41" id="FVJ-6d-TpQ"/>
+                            <constraint firstItem="vDI-3b-JcT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ITb-iz-VBB"/>
+                            <constraint firstItem="zGQ-TM-dl7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UXm-gN-N2L"/>
+                            <constraint firstItem="zGQ-TM-dl7" firstAttribute="top" secondItem="gaO-fG-2gA" secondAttribute="bottom" constant="69" id="f6h-On-3X8"/>
+                            <constraint firstItem="vtj-oq-UqO" firstAttribute="leading" secondItem="gaO-fG-2gA" secondAttribute="trailing" constant="40" id="fId-TG-dvY"/>
+                            <constraint firstItem="gaO-fG-2gA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fx0-tn-Q2M"/>
+                            <constraint firstItem="0xb-VO-7ty" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="hai-nE-hs9"/>
+                            <constraint firstItem="gaO-fG-2gA" firstAttribute="leading" secondItem="0xb-VO-7ty" secondAttribute="trailing" constant="39" id="ijv-fA-Se3"/>
+                            <constraint firstItem="vtj-oq-UqO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="jBc-aK-nGl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-122" y="134"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="0co-MC-CeE">
+            <objects>
+                <viewController id="hiD-Ha-ZnI" customClass="HistoryViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JuK-zU-ypY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qx5-Ac-Jai">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="gameCell" id="RKG-eg-OdZ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RKG-eg-OdZ" id="hKA-fS-rjT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66285707090000001" green="0.52186636909999995" blue="0.94098121759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qx5-Ac-Jai" firstAttribute="top" secondItem="alE-Yj-AsZ" secondAttribute="top" id="0eV-PS-mIZ"/>
+                            <constraint firstItem="alE-Yj-AsZ" firstAttribute="trailing" secondItem="Qx5-Ac-Jai" secondAttribute="trailing" id="59e-r6-MZG"/>
+                            <constraint firstItem="Qx5-Ac-Jai" firstAttribute="leading" secondItem="alE-Yj-AsZ" secondAttribute="leading" id="AyQ-bw-Xck"/>
+                            <constraint firstItem="alE-Yj-AsZ" firstAttribute="bottom" secondItem="Qx5-Ac-Jai" secondAttribute="bottom" id="zWW-Kg-cDw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="alE-Yj-AsZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPY-WA-OeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="545"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="qud-nS-0go">
+            <objects>
+                <viewController id="6QB-B3-MtV" customClass="ResultViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJK-BY-RM6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QN1-PI-GyQ">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="I5r-3P-DKw"/>
+                                    <constraint firstAttribute="height" constant="128" id="ook-64-ATm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n39-Jf-ACy">
+                                <rect key="frame" x="69.5" y="153.5" width="236.5" height="59.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="47"/>
+                                <color key="textColor" red="1" green="0.7751014115" blue="0.97655134200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVx-4D-yMj">
+                                <rect key="frame" x="116.5" y="446" width="142" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Lets play again!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.69201061389999996" green="1" blue="0.69146609640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.69201061389999996" green="1" blue="0.69146609640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66285707089138224" green="0.52186636910769291" blue="0.94098121761658027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZVx-4D-yMj" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="CHu-nz-snJ"/>
+                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="centerY" secondItem="YJK-BY-RM6" secondAttribute="centerY" id="EeC-w7-MEQ"/>
+                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="GVr-jj-1Ej"/>
+                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="top" secondItem="n39-Jf-ACy" secondAttribute="bottom" constant="56.5" id="PxC-yi-xPP"/>
+                            <constraint firstItem="n39-Jf-ACy" firstAttribute="centerX" secondItem="tte-f0-rbH" secondAttribute="centerX" id="QUc-nQ-XY4"/>
+                            <constraint firstItem="ZVx-4D-yMj" firstAttribute="top" secondItem="QN1-PI-GyQ" secondAttribute="bottom" constant="48.5" id="kQy-1c-GEy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tte-f0-rbH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHy-6X-IYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="-286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="history" width="512" height="512"/>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
 </document>

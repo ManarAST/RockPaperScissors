@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		29509F2C22522BF6000E3283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509F2B22522BF6000E3283 /* AppDelegate.swift */; };
-		29509F2E22522BF6000E3283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509F2D22522BF6000E3283 /* ViewController.swift */; };
+		29509F2E22522BF6000E3283 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509F2D22522BF6000E3283 /* StartViewController.swift */; };
 		29509F3122522BF6000E3283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29509F2F22522BF6000E3283 /* Main.storyboard */; };
 		29509F3322522BFE000E3283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29509F3222522BFE000E3283 /* Assets.xcassets */; };
 		29509F3622522BFE000E3283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29509F3422522BFE000E3283 /* LaunchScreen.storyboard */; };
 		29509F4122522BFE000E3283 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509F4022522BFE000E3283 /* RockPaperScissorsTests.swift */; };
 		29509F4C22522BFE000E3283 /* RockPaperScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509F4B22522BFE000E3283 /* RockPaperScissorsUITests.swift */; };
+		29509F5A22522CEB000E3283 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509F5922522CEB000E3283 /* ResultViewController.swift */; };
+		29509F5C22523FF4000E3283 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29509F5B22523FF4000E3283 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		29509F2822522BF6000E3283 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29509F2B22522BF6000E3283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29509F2D22522BF6000E3283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29509F2D22522BF6000E3283 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		29509F3022522BF6000E3283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29509F3222522BFE000E3283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29509F3522522BFE000E3283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		29509F4722522BFE000E3283 /* RockPaperScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperScissorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29509F4B22522BFE000E3283 /* RockPaperScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsUITests.swift; sourceTree = "<group>"; };
 		29509F4D22522BFE000E3283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29509F5922522CEB000E3283 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		29509F5B22523FF4000E3283 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				29509F2B22522BF6000E3283 /* AppDelegate.swift */,
-				29509F2D22522BF6000E3283 /* ViewController.swift */,
+				29509F2D22522BF6000E3283 /* StartViewController.swift */,
+				29509F5B22523FF4000E3283 /* HistoryViewController.swift */,
+				29509F5922522CEB000E3283 /* ResultViewController.swift */,
 				29509F2F22522BF6000E3283 /* Main.storyboard */,
 				29509F3222522BFE000E3283 /* Assets.xcassets */,
 				29509F3422522BFE000E3283 /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29509F2E22522BF6000E3283 /* ViewController.swift in Sources */,
+				29509F2E22522BF6000E3283 /* StartViewController.swift in Sources */,
 				29509F2C22522BF6000E3283 /* AppDelegate.swift in Sources */,
+				29509F5A22522CEB000E3283 /* ResultViewController.swift in Sources */,
+				29509F5C22523FF4000E3283 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

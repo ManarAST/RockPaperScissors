@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartViewController.swift
 //  RockPaperScissors
 //
 //  Created by manar on 01/04/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
