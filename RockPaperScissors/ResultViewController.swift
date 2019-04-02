@@ -13,13 +13,16 @@ let weapons = ["Rock","Paper","Scissors"]
 class ResultViewController: UIViewController {
     
     var playersWeapon : Int?
-    var opponentWeapon : Int?
+    var opponentsWeapon : Int?
 
     override func viewDidLoad() {
-        print("players weapon: \(weapons[playersWeapon!])")
-        print("opponents weapon: \(weapons[opponentWeapon!])")
+        if let playersWeapon = self.playersWeapon {
+            print("players weapon: \(weapons[playersWeapon])")
+        }
+        if let opponentsWeapon = self.opponentsWeapon{
+        print("opponents weapon: \(weapons[opponentsWeapon])")
     }
     
-
+    }
    
 }

@@ -41,6 +41,9 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-oq-UqO">
                                 <rect key="frame" x="265" y="301" width="75" height="65"/>
                                 <state key="normal" image="scissors"/>
+                                <connections>
+                                    <segue destination="6QB-B3-MtV" kind="presentation" identifier="play" id="We9-tQ-QvT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGQ-TM-dl7">
                                 <rect key="frame" x="155" y="435" width="65" height="65"/>
@@ -50,13 +53,21 @@
                                 </constraints>
                                 <state key="normal" image="history"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYY-LL-gDP">
+                                <rect key="frame" x="141" y="390" width="93" height="37"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="29"/>
+                                <color key="textColor" red="0.69201061389999996" green="1" blue="0.69146609640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.54596141276408627" green="0.25751924979184926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PYY-LL-gDP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4LS-pK-Jvg"/>
                             <constraint firstItem="gaO-fG-2gA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9mN-UI-45G"/>
                             <constraint firstItem="gaO-fG-2gA" firstAttribute="top" secondItem="vDI-3b-JcT" secondAttribute="bottom" constant="41" id="FVJ-6d-TpQ"/>
                             <constraint firstItem="vDI-3b-JcT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ITb-iz-VBB"/>
                             <constraint firstItem="zGQ-TM-dl7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UXm-gN-N2L"/>
+                            <constraint firstItem="zGQ-TM-dl7" firstAttribute="top" secondItem="PYY-LL-gDP" secondAttribute="bottom" constant="8" id="cFd-L1-5HC"/>
                             <constraint firstItem="zGQ-TM-dl7" firstAttribute="top" secondItem="gaO-fG-2gA" secondAttribute="bottom" constant="69" id="f6h-On-3X8"/>
                             <constraint firstItem="vtj-oq-UqO" firstAttribute="leading" secondItem="gaO-fG-2gA" secondAttribute="trailing" constant="40" id="fId-TG-dvY"/>
                             <constraint firstItem="gaO-fG-2gA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fx0-tn-Q2M"/>
