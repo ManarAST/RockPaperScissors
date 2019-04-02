@@ -24,15 +24,21 @@
                                 <color key="textColor" red="0.39908200691043455" green="0.90600712435233155" blue="0.73356908681064092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-VO-7ty">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-VO-7ty">
                                 <rect key="frame" x="36" y="301" width="75" height="65"/>
                                 <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="Paper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSb-KN-AbV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-fG-2gA">
                                 <rect key="frame" x="150" y="301" width="75" height="65"/>
                                 <state key="normal" image="rock"/>
+                                <connections>
+                                    <action selector="Rock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9w-k2-hdd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-oq-UqO">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-oq-UqO">
                                 <rect key="frame" x="265" y="301" width="75" height="65"/>
                                 <state key="normal" image="scissors"/>
                             </button>
@@ -105,7 +111,7 @@
         <!--Result View Controller-->
         <scene sceneID="qud-nS-0go">
             <objects>
-                <viewController id="6QB-B3-MtV" customClass="ResultViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="6QB-B3-MtV" customClass="ResultViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YJK-BY-RM6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
