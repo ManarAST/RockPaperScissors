@@ -102,9 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				29509F2B22522BF6000E3283 /* AppDelegate.swift */,
-				29509F2D22522BF6000E3283 /* StartViewController.swift */,
-				29509F5922522CEB000E3283 /* ResultViewController.swift */,
-				29509F5B22523FF4000E3283 /* HistoryViewController.swift */,
+				29509F5D2254B011000E3283 /* VeiwControllers */,
+				29509F5E2254B06B000E3283 /* helperFiles */,
 				29509F2F22522BF6000E3283 /* Main.storyboard */,
 				29509F3222522BFE000E3283 /* Assets.xcassets */,
 				29509F3422522BFE000E3283 /* LaunchScreen.storyboard */,
@@ -129,6 +128,23 @@
 				29509F4D22522BFE000E3283 /* Info.plist */,
 			);
 			path = RockPaperScissorsUITests;
+			sourceTree = "<group>";
+		};
+		29509F5D2254B011000E3283 /* VeiwControllers */ = {
+			isa = PBXGroup;
+			children = (
+				29509F2D22522BF6000E3283 /* StartViewController.swift */,
+				29509F5922522CEB000E3283 /* ResultViewController.swift */,
+				29509F5B22523FF4000E3283 /* HistoryViewController.swift */,
+			);
+			path = VeiwControllers;
+			sourceTree = "<group>";
+		};
+		29509F5E2254B06B000E3283 /* helperFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helperFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

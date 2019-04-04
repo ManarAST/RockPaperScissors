@@ -26,21 +26,21 @@
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-VO-7ty">
                                 <rect key="frame" x="36" y="301" width="75" height="65"/>
-                                <state key="normal" image="paper"/>
+                                <state key="normal" image="Paper"/>
                                 <connections>
                                     <action selector="Paper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSb-KN-AbV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-fG-2gA">
                                 <rect key="frame" x="150" y="301" width="75" height="65"/>
-                                <state key="normal" image="rock"/>
+                                <state key="normal" image="Rock"/>
                                 <connections>
                                     <action selector="Rock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9w-k2-hdd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-oq-UqO">
                                 <rect key="frame" x="265" y="301" width="75" height="65"/>
-                                <state key="normal" image="scissors"/>
+                                <state key="normal" image="Scissors"/>
                                 <connections>
                                     <segue destination="6QB-B3-MtV" kind="presentation" identifier="play" id="We9-tQ-QvT"/>
                                 </connections>
@@ -128,20 +128,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QN1-PI-GyQ">
-                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <rect key="frame" x="67.5" y="385" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="I5r-3P-DKw"/>
                                     <constraint firstAttribute="height" constant="128" id="ook-64-ATm"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n39-Jf-ACy">
-                                <rect key="frame" x="69.5" y="153.5" width="236.5" height="59.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n39-Jf-ACy">
+                                <rect key="frame" x="69.5" y="304" width="236.5" height="59.5"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="47"/>
                                 <color key="textColor" red="1" green="0.7751014115" blue="0.97655134200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVx-4D-yMj">
-                                <rect key="frame" x="116.5" y="446" width="142" height="38"/>
+                                <rect key="frame" x="116.5" y="541" width="142" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Lets play again!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -152,29 +152,54 @@
                                 <state key="highlighted">
                                     <color key="titleColor" red="0.69201061389999996" green="1" blue="0.69146609640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="6QB-B3-MtV" eventType="touchUpInside" id="plp-GH-z9z"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WmD-y9-VtF">
+                                <rect key="frame" x="150" y="160" width="75" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="WSW-AL-imJ"/>
+                                    <constraint firstAttribute="width" constant="75" id="mQG-y4-rw2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent's Weapon:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1t-nC-Zg0">
+                                <rect key="frame" x="47.5" y="93" width="280" height="40"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="31"/>
+                                <color key="textColor" red="0.9164007306098938" green="0.89217585325241089" blue="0.52988243103027344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.66285707089138224" green="0.52186636910769291" blue="0.94098121761658027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZVx-4D-yMj" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="CHu-nz-snJ"/>
-                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="centerY" secondItem="YJK-BY-RM6" secondAttribute="centerY" id="EeC-w7-MEQ"/>
-                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="GVr-jj-1Ej"/>
-                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="top" secondItem="n39-Jf-ACy" secondAttribute="bottom" constant="56.5" id="PxC-yi-xPP"/>
-                            <constraint firstItem="n39-Jf-ACy" firstAttribute="centerX" secondItem="tte-f0-rbH" secondAttribute="centerX" id="QUc-nQ-XY4"/>
-                            <constraint firstItem="ZVx-4D-yMj" firstAttribute="top" secondItem="QN1-PI-GyQ" secondAttribute="bottom" constant="48.5" id="kQy-1c-GEy"/>
+                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="0k1-Kl-k5e"/>
+                            <constraint firstItem="WmD-y9-VtF" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="HGB-oQ-rQ8"/>
+                            <constraint firstItem="n39-Jf-ACy" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="LGB-Ko-rBQ"/>
+                            <constraint firstItem="n1t-nC-Zg0" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="Ne2-dM-Z4d"/>
+                            <constraint firstItem="ZVx-4D-yMj" firstAttribute="centerX" secondItem="YJK-BY-RM6" secondAttribute="centerX" id="W0g-so-qb1"/>
+                            <constraint firstItem="n39-Jf-ACy" firstAttribute="centerY" secondItem="YJK-BY-RM6" secondAttribute="centerY" id="WhT-7o-Xwt"/>
+                            <constraint firstItem="QN1-PI-GyQ" firstAttribute="top" secondItem="n39-Jf-ACy" secondAttribute="bottom" constant="21.5" id="Yzu-B1-0b6"/>
+                            <constraint firstItem="ZVx-4D-yMj" firstAttribute="top" secondItem="QN1-PI-GyQ" secondAttribute="bottom" constant="28" id="bKQ-0L-JTQ"/>
+                            <constraint firstItem="n39-Jf-ACy" firstAttribute="top" secondItem="WmD-y9-VtF" secondAttribute="bottom" constant="79" id="lwx-MM-U2e"/>
+                            <constraint firstItem="WmD-y9-VtF" firstAttribute="top" secondItem="n1t-nC-Zg0" secondAttribute="bottom" constant="27" id="xfn-rs-F1o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tte-f0-rbH"/>
                     </view>
+                    <connections>
+                        <outlet property="opponentWeaponImage" destination="WmD-y9-VtF" id="SOw-Tw-JXK"/>
+                        <outlet property="resultImage" destination="QN1-PI-GyQ" id="CyV-vp-sdf"/>
+                        <outlet property="resultLabel" destination="n39-Jf-ACy" id="02A-PT-JaB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHy-6X-IYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="-286"/>
+            <point key="canvasLocation" x="765.60000000000002" y="-286.50674662668666"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Paper" width="75" height="65"/>
+        <image name="Rock" width="75" height="65"/>
+        <image name="Scissors" width="75" height="65"/>
         <image name="history" width="512" height="512"/>
-        <image name="paper" width="75" height="65"/>
-        <image name="rock" width="75" height="65"/>
-        <image name="scissors" width="75" height="65"/>
     </resources>
 </document>
